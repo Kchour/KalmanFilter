@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <tabbed_widget parent="main_window" name="Main Window">
+  <plotmatrix columns="2" tab_name="plot" rows="4">
+   <plot row="0" col="0">
+    <range bottom="-0.695019" top="-0.050993" left="1246417.158213" right="1246427.155283"/>
+    <limitY/>
+    <curve R="0" name="/test/vehicle/filtered_accel/data" G="128" B="0"/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="1" col="0">
+    <range bottom="-1.024250" top="-0.005750" left="0.000000" right="9.999820"/>
+    <limitY/>
+    <curve R="255" name="/test/vehicle/imu/withcovariance/linear_acceleration/x" G="0" B="0"/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="2" col="0">
+    <range bottom="-0.100000" top="0.100000" left="1246417.179273" right="1246427.172191"/>
+    <limitY/>
+    <curve R="0" name="/test/kalman/test/states.15" G="0" B="255"/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="3" col="0">
+    <range bottom="-0.000131" top="-0.000117" left="1246421.259078" right="1246421.371475"/>
+    <limitY/>
+    <curve R="0" name="/test/kalman/test/states.19" G="128" B="128"/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="0" col="1">
+    <range bottom="0.000000" top="1.000000" left="0.000000" right="0.000000"/>
+    <limitY/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="1" col="1">
+    <range bottom="0.000000" top="1.000000" left="0.000000" right="0.000000"/>
+    <limitY/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="2" col="1">
+    <range bottom="-0.100000" top="0.100000" left="1246417.179096" right="1246427.171736"/>
+    <limitY/>
+    <curve R="255" name="/test/kalman/states/states.5" G="0" B="255"/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="3" col="1">
+    <range bottom="0.022413" top="0.030982" left="1246420.231803" right="1246422.258077"/>
+    <limitY/>
+    <curve R="160" name="/test/kalman/test/states.20" G="160" B="164"/>
+    <transform value="noTransform"/>
+   </plot>
+  </plotmatrix>
+  <currentPlotMatrix index="0"/>
+ </tabbed_widget>
+ <use_relative_time_offset enabled="1"/>
+ <Plugins>
+  <DataLoad_CSV>
+   <default time_axis=""/>
+  </DataLoad_CSV>
+  <DataLoad_ROS_bags>
+   <selected_topics list=""/>
+  </DataLoad_ROS_bags>
+  <ROS_Topic_Streamer>
+   <selected_topics list="/test/kalman/states;/test/kalman/test;/test/vehicle/filtered_accel;/test/vehicle/imu/withcovariance;/test/vehicle/twist"/>
+  </ROS_Topic_Streamer>
+  <RosoutPublisherROS/>
+  <TopicPublisherROS/>
+ </Plugins>
+ <previouslyLoadedStreamer name="ROS_Topic_Streamer"/>
+</root>
+
